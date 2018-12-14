@@ -1,6 +1,3 @@
-# ns.openxml.bookmark
-Fill bookmark content on word document using open xml
-
 # What is NS.OpenXML.Bookmark?
 
 NS.OpenXML.Bookmark is a small .Net library that fills bookmark content on word document using open xml.
