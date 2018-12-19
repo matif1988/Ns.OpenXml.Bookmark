@@ -1,8 +1,7 @@
-﻿/* Copyright (C) Mohammed ATIF https://github.com/matif1988/ns.openxml.bookmark - All Rights Reserved */
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
 
-namespace NS.OpenXml.Bookmark.Helper
+namespace NS.OpenXml.Bookmark.Sample.Helper
 {
     /// <summary>
     /// The html render helper class

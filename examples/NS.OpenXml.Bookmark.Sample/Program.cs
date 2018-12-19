@@ -1,6 +1,6 @@
 ﻿/* Copyright (C) Mohammed ATIF https://github.com/matif1988/ns.openxml.bookmark - All Rights Reserved */
-using NS.OpenXml.Bookmark.Helper;
 using NS.OpenXml.Bookmark.Model;
+using NS.OpenXml.Bookmark.Sample.Helper;
 using System;
 using System.Collections.Generic;
 using System.IO;
