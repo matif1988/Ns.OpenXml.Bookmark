@@ -1,5 +1,7 @@
 [![Latest version](https://img.shields.io/nuget/v/ns.openxml.bookmark.svg)](https://www.nuget.org/packages/NS.OpenXml.Bookmark)
-[![NuGet](https://img.shields.io/nuget/dt/NS.OpenXml.Bookmark.svg)]()
+[![NuGet](https://img.shields.io/nuget/dt/NS.OpenXml.Bookmark.svg)](https://www.nuget.org/packages/NS.OpenXml.Bookmark)
+[![master](https://img.shields.io/azure-devops/build/neosys000/oms/5/master.svg)](https://img.shields.io/azure-devops/build/neosys000/oms/5/master.svg)
+[![MyGet](https://img.shields.io/azure-devops/release/neosys000/945dc9e7-47f4-4349-8840-e5f4cffa92e4/2/2.svg)](https://img.shields.io/azure-devops/release/neosys000/945dc9e7-47f4-4349-8840-e5f4cffa92e4/2/2.svg)
 
 # What is NS.OpenXml.Bookmark?
 
