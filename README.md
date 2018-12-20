@@ -1,9 +1,9 @@
 [![Latest version](https://img.shields.io/nuget/v/ns.openxml.bookmark.svg)](https://www.nuget.org/packages/NS.OpenXml.Bookmark)
 [![NuGet](https://img.shields.io/nuget/dt/NS.OpenXml.Bookmark.svg)]()
 
-# What is NS.OpenXML.Bookmark?
+# What is NS.OpenXml.Bookmark?
 
-NS.OpenXML.Bookmark is a small .Net library that provides tools for working with Office Word using OpenXml. It supports scenarios such as:
+OpenXml Bookmark is a small .Net library that provides tools for working with Office Word using OpenXml. It supports scenarios such as:
 - Populating content in Word files using OpenXml.
 - Searching and replacing content in Word using bookmarks (Text, Image, Table, ...).
 - Retrieving list of bookmarks in Word document.
