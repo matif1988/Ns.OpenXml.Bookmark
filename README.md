@@ -18,7 +18,6 @@ Depends on :
 * [HtmlToOpenXml](https://www.nuget.org/packages/NS.HtmlToOpenXml/).
 
 # If You Have Problems
-
 If you want to report a problem (bug, behavior, build, distribution, feature request, etc...) with this class library built by this repository, please feel free to post a new issue and I will try to help.
 
 # Support
