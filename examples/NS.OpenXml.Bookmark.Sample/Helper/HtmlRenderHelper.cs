@@ -1,5 +1,12 @@
-﻿using System.Collections.Generic;
+﻿#if NET_CORE
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Text.Encodings.Web;
+#else
 using System.Web.Mvc;
+#endif
+using System.Collections.Generic;
+
 
 namespace NS.OpenXml.Bookmark.Sample.Helper
 {
@@ -18,8 +25,14 @@ namespace NS.OpenXml.Bookmark.Sample.Helper
         public static string RenderImageAsHtml(string src, int? width = null, int? height = null)
         {
             // Create tag builder
+#if NET_CORE
+            var builder = new TagBuilder("img")
+            {
+                TagRenderMode = TagRenderMode.Normal
+            };
+#else
             var builder = new TagBuilder("img");
-
+#endif
             builder.MergeAttribute(nameof(src), src);
 
             if (width.HasValue)
@@ -27,8 +40,11 @@ namespace NS.OpenXml.Bookmark.Sample.Helper
 
             if (height.HasValue)
                 builder.MergeAttribute(nameof(height), height.Value.ToString());
-
+#if NET_CORE
+            return GetString(builder);
+#else
             return builder.ToString(TagRenderMode.Normal);
+#endif
         }
 
         /// <summary>
@@ -40,7 +56,14 @@ namespace NS.OpenXml.Bookmark.Sample.Helper
         public static string RenderImageAsHtml(string src, Dictionary<string, string> attributes)
         {
             // Create tag builder
+#if NET_CORE
+            var builder = new TagBuilder("img")
+            {
+                TagRenderMode = TagRenderMode.Normal
+            };
+#else
             var builder = new TagBuilder("img");
+#endif
 
             if (attributes != null)
             {
@@ -50,7 +73,25 @@ namespace NS.OpenXml.Bookmark.Sample.Helper
                 }
             }
 
+#if NET_CORE
+            return GetString(builder);
+#else
             return builder.ToString(TagRenderMode.Normal);
+#endif
         }
+
+#if NET_CORE
+        /// <summary>
+        /// Gets html content as string
+        /// </summary>
+        /// <param name="content">The html content.</param>
+        /// <returns>The html as string.</returns>
+        public static string GetString(IHtmlContent content)
+        {
+            var writer = new System.IO.StringWriter();
+            content.WriteTo(writer, HtmlEncoder.Default);
+            return writer.ToString();
+        }
+#endif
     }
 }
