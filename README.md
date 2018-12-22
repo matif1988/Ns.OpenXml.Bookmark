@@ -11,17 +11,19 @@ The Open XML Excel Interop is a small .Net library that provides tools for worki
 - Searching and replacing content in Word using bookmarks (Text, Image, Table, ...).
 - Retrieving list of bookmarks in Word document.
 
-Depends on : 
-* [DocumentFormat.OpenXml](https://www.nuget.org/packages/DocumentFormat.OpenXml/)
-* [HtmlToOpenXml](https://www.nuget.org/packages/NS.HtmlToOpenXml/).
-
 Table of Contents
 -----------------
 
+- [Dependencies](#dependencies)
 - [Releases](#releases)
   - [Supported platforms](#supported-platforms)
 - [If You Have Problems](#if-you-have-problems)
 - [Support](#support)
+
+Dependencies
+------------
+* [DocumentFormat.OpenXml](https://www.nuget.org/packages/DocumentFormat.OpenXml/)
+* [HtmlToOpenXml](https://www.nuget.org/packages/NS.HtmlToOpenXml/)
 
 Releases
 --------
