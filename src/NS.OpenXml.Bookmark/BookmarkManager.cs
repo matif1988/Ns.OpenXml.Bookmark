@@ -124,8 +124,7 @@ namespace NS.OpenXml.Bookmark
         /// Fills the table bookmark
         /// </summary>
         /// <param name="mainDocPart">The main document part</param>
-        /// <param name="firstBookmarkInTable">The first bookmark in the table</param>
-        /// <param name="tableData">The table data</param>
+        /// <param name="bookmarkContent">The bookmark content</param>
         static void FillTableBookmark(MainDocumentPart mainDocPart, BookmarkContent bookmarkContent)
         {
             // find our bookmark

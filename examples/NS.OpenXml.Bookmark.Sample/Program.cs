@@ -18,7 +18,7 @@ namespace NS.OpenXml.Bookmark.Sample
         static void Main(string[] args)
         {
             // Retrieve project path
-            string projectPath = AppDomain.CurrentDomain.BaseDirectory.Substring(0, AppDomain.CurrentDomain.BaseDirectory.LastIndexOf(@"bin"));
+            string projectPath = AppDomain.CurrentDomain.BaseDirectory.Substring(0, AppDomain.CurrentDomain.BaseDirectory.LastIndexOf("bin"));
 
             // Retrieve template document.
             var templatePath = $"{projectPath}\\Template\\Modèle CV Standard.docx";
@@ -34,6 +34,9 @@ namespace NS.OpenXml.Bookmark.Sample
 
             // Open Word document and fill bookmarks
             BookmarkManager.OpenAndFillBookmarkOnWordDocument(new FileInfo(tempFilePath), bookmarkContents);
+
+            Console.Write($"Generated file path : {tempFilePath}");
+            Console.ReadLine();
         }
 
         /// <summary>

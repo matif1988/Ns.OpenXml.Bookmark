@@ -1,29 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netstandard1.4</TargetFrameworks>
-    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">net45;net46;netstandard1.4</TargetFrameworks>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netstandard2.0</TargetFrameworks>
+    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">net45;net46;netstandard2.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyName>NS.OpenXml.Bookmark</AssemblyName>
     <RootNamespace>NS.OpenXml.Bookmark</RootNamespace>
-    <PackageId>NS.OpenXml.Bookmark.dll</PackageId>
-    <Version>1.1</Version>
+    <PackageId>NS.OpenXml.Bookmark</PackageId>
+    <Version Condition=" '$(BUILD_BUILDNUMBER)' == '' ">2.0.0-local</Version>
+    <Version Condition=" '$(BUILD_BUILDNUMBER)' != '' ">2.0.$(BUILD_BUILDNUMBER)</Version>
     <Copyright>Copyright 2018-2019</Copyright>
     <PackageTags>office openxml netcore netstandard html</PackageTags>
-    <AssemblyVersion>1.1</AssemblyVersion>
     <PackageProjectUrl>https://github.com/matif1988/ns.openxml.bookmark</PackageProjectUrl>
     <RepositoryUrl></RepositoryUrl>
     <Description>NS.OpenXML.Bookmark is a small .Net library that fills bookmark content on word document using open xml.</Description>
     <Authors>Mohammed ATIF</Authors>
-    <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
-    <FileVersion>1.1</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net46' ">
     <DefineConstants>$(DefineConstants);FEATURE_REFLECTION</DefineConstants>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.4' ">
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
     <DefineConstants>$(DefineConstants);NET_CORE</DefineConstants>
   </PropertyGroup>
   
@@ -33,7 +30,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
 
-  <!-- .NET Framework 4.6 && .NET Standard 1.4 -->
+  <!-- .NET Framework 4.6, 4.5 && .NET Standard 2.0 -->
   <ItemGroup>
     <PackageReference Include="NS.HtmlToOpenXml">
       <Version>1.1.0</Version>
