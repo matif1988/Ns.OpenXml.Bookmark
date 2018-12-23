@@ -3,6 +3,7 @@
 [![master](https://img.shields.io/azure-devops/build/neosys000/oms/5/master.svg)](https://img.shields.io/azure-devops/build/neosys000/oms/5/master.svg)
 [![MyGet](https://img.shields.io/azure-devops/release/neosys000/945dc9e7-47f4-4349-8840-e5f4cffa92e4/2/2.svg)](https://img.shields.io/azure-devops/release/neosys000/945dc9e7-47f4-4349-8840-e5f4cffa92e4/2/2.svg)
 [![Build status](https://neosys000.visualstudio.com/OMS/_apis/build/status/NS.OpenXml.Bookmark-CI)](https://neosys000.visualstudio.com/OMS/_build/latest?definitionId=5)
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/matif1988/Ns.OpenXml.Bookmark/edit/master/LICENSE)
 
 # Open XML Excel Interop
 
