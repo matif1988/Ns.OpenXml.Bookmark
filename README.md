@@ -5,7 +5,7 @@
 [![Build status](https://neosys000.visualstudio.com/OMS/_apis/build/status/NS.OpenXml.Bookmark-CI)](https://neosys000.visualstudio.com/OMS/_build/latest?definitionId=5)
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/matif1988/Ns.OpenXml.Bookmark/edit/master/LICENSE)
 
-# Open XML Excel Interop
+# Open XML Bookmark
 
 The Open XML Excel Interop is a small .Net library that provides tools for working with Office Word using Open XML SDK. It supports scenarios such as:
 - Populating content in Word files using Open XML.
